@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dgawdtjat/image/upload/v1728801883/img1_vcdtsh.jpg" type="image/x-icon">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        @media screen and (max-width:1100px){
+    .bdy{
+    background-color: rgb(252, 208, 88);
+  } 
+
+  
+  .logo{
+      justify-content: center;
+      margin: 12px 0;
+    }
+    
+    nav{
+      flex-direction: column;
+    }
+
+nav ul{
+    justify-content: center;
+     height: 34px;
+}
+
+.search{
+    justify-content: center;
+}
+
+.search input{
+    margin: 12px 16px;
+}
+
+.slider{
+    height: 23vh;
+}
+.card{ display: inline-flex;
+    flex-direction: column;
+    margin: 5vh;
+    height: auto;
+    
+}
+
+.card h2{
+    margin-left: 45%;
+    
+}
+
+.card-item{
+   display: inline-flex;
+    margin: 2vh auto;
+    flex-direction: column;
+   
+    
+}
+.text-center{
+    margin: .5vh auto;
+   
+}
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: rgba(236, 232, 8, 0.514);
+    border: 3px solid rgb(68, 0, 255)
+}
+
+.bdy{
+    background-color: rgba(10, 125, 219, 0.089);
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 125px;
+    padding: 0 15px;
+}
+
+nav ul{
+    height: 9vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+color: rgb(245, 253, 18);
+font-weight: bolder;
+background-color: brown;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    width: 30vw;
+    height: 23px;
+    border-radius: 5px;
+    margin: 0 16px 0 98px;
+    padding: 0 12px;
+}
+
+.btn{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.container{
+    min-height: calc(100vh - 9vh - 9vh);
+}
+
+.slider{
+    margin: 12px auto;
+    width:80vw;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 80vw;
+    height: 50vh;
+}
+
+.mark{
+    background-color:rgb(236, 84, 160);
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    color: rgb(34, 32, 30);
+    padding: 12px 0px;
+}
+
+.card{ 
+    margin: 78px auto;
+    width: 91vw;
+    height: 52vh;
+    background-color:rgba(236, 232, 8, 0.514);
+    overflow: scroll;
+}
+.card-item{
+    margin: 0 21px;
+    width: 12vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+   
+
+}
+
+.card h2{
+    font-family: 'Lato', sans-serif;
+    color: deeppink;
+    margin-bottom: 26px;
+   
+}
+.text-center{
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 0, 128);
+    font-family: 'Lato', sans-serif;
+}
+.text-center1{
+    text-align: center;
+    justify-content: center;
+    color: rgba(0, 38, 255, 0.747);
+    font-family: 'Lato', sans-serif;
+}
+
+footer{
+    height: 9vh; 
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    padding: 0px 3px;
+    background: black;
+    color: yellow;
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: brown;
+    font-weight: bolder;
+    color: aqua;
+    }
+    .contact {
+            background-color: rgba(236, 232, 8, 0.644);
+            width: 300px;
+            height: 350px;
+            border: 2px solid rgb(17, 15, 15);
+            padding: 30px;
+            padding-bottom: 30px;
+            border-radius: 25px;
+            margin-left: 500px;
+            margin-right: 300px;
+           }
+           input[type=email]{
+            padding:20px ;
+            height: 20px;
+            background-color: rgba(46, 223, 208, 0.534);
+            width: 250px;
+            margin-top: 5px;
+            padding-bottom: 20px;
+            border-radius: 15px;
+           }
+           input[type=number]{
+            height: 20px;
+            padding:20px ;
+            background-color: rgba(46, 223, 208, 0.534);
+            width: 250px;
+            margin-top: 5px;
+            align-content: center;
+            padding-bottom: 20px;
+            border-radius: 15px;
+
+           }
+           .submit{
+            margin-left: 40px;
+            border-radius: 25px;
+            height: 40px;
+            width: 200px;
+           }
+           .submit:hover{
+            cursor: pointer;
+            background-color: pink;
+           }
+           .footer{
+    margin-top: 80px;
+    background-color: rgb(248, 245, 73);
+}
+
+.foot{
+    padding: 20px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    
+}
+
+.footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(240, 177, 177);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: white;
+}
+
+.footlinks ul li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.footlinks ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #7e7979;
+    display: block;
+    transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+    transform: translate(6px);
+    color: rgb(238, 15, 171);
+}
+
+.social a{
+    font-size: 25px;
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    color: aqua;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: ease 0.30s;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+}
+
+.end{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 12px;
+}
+
+.end p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+    </style>
+</head>
+<body class="bdy">
+    <header>
+<nav>
+    <div class="logo" id="home">
+        <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728801883/img1_vcdtsh.jpg"  alt="">
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#card">Collection</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>               
+    <div class="search">
+        <input type="text" name="" id="" placeholder="Search Here....">
+        <button class="btn">Search</button>
+    </div>
+</nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728818745/c3_eahyvn.jpg" alt="">
+            </div>
+            <h1 style="color: rgb(231, 148, 24);font-size:80px ;align-content: center;margin-left: 500px;">My Shopping</h1>
+            <br><br>
+            <div class="mark">
+                <marquee behavior="" direction="">Shop This Festive Season At <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728817962/c2_whwr6r.jpg" alt="" width="125px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Offers And Discounts Are Available @ <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728817962/c2_whwr6r.jpg" alt="" width="125px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop This Festive Season At <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728817962/c2_whwr6r.jpg" alt="" width="125px"></marquee>
+            </div>
+            <div class="card" id="card">
+                 <h2>Girls Kurtis</h2> 
+                 <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728802537/Kurti-Pant-Dupatta-for-Stylish-Ladies-1_iqapqr.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Yellw_Kurti</p>
+                    <p class="text-center1">Min 20% Off</p>
+                    <p class="text-center">₹800</p>
+                </div>
+                <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728802893/casual-wear-Kurti-Pant-dupatta-1_zkbg9f.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Casual-Wear-Kurti</p>
+                    <p class="text-center1">Min 25% Off</p>
+                    <p class="text-center">₹1,000</p>
+                </div>
+                <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728803009/Beautiful-Art-Silk-Dupatta-2-_h4wlin.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Art-Silk-Dupatta</p>
+                    <p class="text-center1">Min 23% Off</p>
+                    <p class="text-center">₹800</p>
+                </div> <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804111/img4_mgxpxr.jpg"  width="180px" height="220px">
+                    <p class="text-center">Mehndi_Wear</p>
+                    <p class="text-center1">Min 17% Off</p>
+                    <p class="text-center">₹900</p>
+                </div> <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728803875/img2_cg3ov2.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Engagement_Special</p>
+                    <p class="text-1">Min 15% Off</p>
+                    <p class="text-center">₹850</p>
+                </div> <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804009/img3_tpr8nl.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Classic_Yellow_Lehnga</p>
+                    <p class="text-center1">Min 20% Off</p>
+                    <p class="text-center">₹800</p>
+                </div>     
+                <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728809275/img5_hwk5ck.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Classic_Red_Lehnga</p>
+                    <p class="text-center1">Min 20% Off</p>
+                    <p class="text-center">₹700</p>
+                </div> 
+                <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728809512/img6_xcamvq.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Classic_Red_Lehnga</p>
+                    <p class="text-center1">Min 30% Off</p>
+                    <p class="text-center">₹850</p>
+                </div> 
+                <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728809599/img7_viurpe.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Classic_Blue_Lehnga</p>
+                    <p class="text-center1">Min 23% Off</p>
+                    <p class="text-center">₹900</p>
+                </div> 
+                <div class="card-item">
+                    <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728809678/img8_n5nuwg.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center">Classic_Yellow and White_Lehnga</p>
+                    <p class="text-center1">Min 25% Off</p>
+                    <p class="text-center">₹850</p>
+                </div>           
+            </div>
+            <div class="card">
+                <h2>Womans Trending Sarees</h2> 
+                <div class="card-item">
+                   <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804519/saree1_tgeokl.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Blue Saree with stone</p>
+                   <p class="text-center1">Min 20% Off</p>
+                   <p class="text-center">₹2,200</p>
+               </div>
+               <div class="card-item">
+                   <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804555/saree2_rsem4w.jpg" alt="" width="180px" height="220px">
+                 <p class="text-center" alt="" width="180px" height="220px">
+                <p class="text-center">Pink Silk Saree</p>
+                   <p class="text-center1">Min 25% Off</p>
+                   <p class="text-center">₹2,000</p>
+               </div>
+               <div class="card-item">
+                   <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804585/saree3_opfnu1.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Blue Saree</p>
+                   <p class="text-center1">Min 23% Off</p>
+                   <p class="text-center">₹1,200</p>
+               </div> <div class="card-item">
+                   <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804615/saree4_pjfcnr.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Brown Saree</p>
+                   <p class="text-center1">Min 17% Off</p>
+                   <p class="text-center">₹1,400</p>
+               </div> <div class="card-item">
+                   <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804644/saree5_kcoybm.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Black Saree</p>
+                   <p class="text-center1">Min 15% Off</p>
+                   <p class="text-center">₹2,400</p>
+               </div> <div class="card-item">
+                   <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728804779/saree6_g43pko.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Green Saree</p>
+                   <p class="text-center1">Min 20% Off</p>
+                   <p class="text-center">₹1,500</p>
+               </div>
+               <div class="card-item">
+                <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728805084/saree7_vgopbb.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Pink Saree </p>
+                <p class="text-center1">Min 25% Off</p>
+                <p class="text-center">₹1,000</p>
+            </div>  
+            <div class="card-item">
+                <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728805268/saree8_ax3fwv.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Light Pink Saree</p>
+                <p class="text-center1">Min 28% Off</p>
+                <p class="text-center">₹2,000</p>
+            </div> 
+            <div class="card-item">
+                <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728805354/saree9_clrqky.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Red Saree</p>
+                <p class="text-center1">Min 20% Off</p>
+                <p class="text-center">₹1,800</p>
+            </div> 
+            <div class="card-item">
+                <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728805556/saree10_chsxfl.jpg" alt="" width="180px" height="220px">
+                <p class="text-center">Blue and white color</p>
+                <p class="text-center1">Min 30% Off</p>
+                <p class="text-center">₹1,500</p>
+            </div>                
+           </div>
+           <div class="card">
+            <h2>Trending Western Wears</h2> 
+            <div class="card-item">
+               <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728810506/w1_rgzmwp.jpg" alt="" width="180px" height="220px">
+               <p class="text-center">Western new model</p>
+               <p class="text-center1">₹1,800</p> 
+               <p class="text-center"> Min 23% off</p>
+           </div>
+           <div class="card-item">
+               <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728810599/w2_hctqth.jpg" alt="" width="180px" height="220px">
+               <p class="text-center">Purble_Color </p>
+               <p class="text-center1">₹1,500</p>
+               <p class="text-center">Min 28% off</p>
+           </div>
+           <div class="card-item">
+               <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728810720/w3_u8leo8.jpg" alt="" width="180px" height="220px">
+               <p class="text-center">Green skirt</p>
+               <p class="text-center1">₹1,000</p>
+               <p class="text-center">Min 28% off</p>
+           </div> <div class="card-item">
+               <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728810752/w4_ncums8.jpg" alt="" width="180px" height="220px">
+              <p class="text-center">Yellow_Western</p>
+              <p class="text-center1">₹1,200</p> 
+              <p class="text-center">Min 25% off</p>
+           </div> <div class="card-item">
+               <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728810786/w5_ww9kwl.jpg" alt="" width="180px" height="220px">
+               <p class="text-center">Pink_silk model </p>
+               <p class="text-center1">₹1,800</p>
+               <p class="text-center">Min_18% off</p>
+           </div> <div class="card-item">
+               <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728810816/w6_yzmpqr.jpg" alt="" width="180px" height="220px">
+               <p class="text-center">Trending_Office_Wear</p>
+               <p class="text-center1">₹1,000</p>
+               <p class="text-center">Min 30% off</p>
+           </div>  
+           <div class="card-item">
+            <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728811235/w7_rgfwlt.jpg" alt="" width="180px" height="220px">
+            <p class="text-center">White Korean model</p>
+            <p class="text-center1">₹1,400</p>
+            <p class="text-center">Min 15% off</p>
+        </div>  
+        <div class="card-item">
+            <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728811275/w8_u0gt98.jpg" alt="" width="180px" height="220px">
+            <p class="text-center">Brown Silk model</p>
+            <p class="text-center1">₹1,800</p>
+            <p class="text-center">Min 30% off</p>
+        </div>  
+        <div class="card-item">
+            <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728811311/w9_l1adve.jpg" alt="" width="180px" height="220px">
+            <p class="text-center">Blue_jeans_With_Checked_Shirt</p>
+            <p class="text-center1">₹2,000</p>
+            <p class="text-center">Min 20% off</p>
+        </div>  
+        <div class="card-item">
+            <img src="https://res.cloudinary.com/dgawdtjat/image/upload/v1728811369/w10_ececyw.jpg" alt="" width="180px" height="220px">
+            <p class="text-center">Trending_Blazzers</p>
+            <p class="text-center1">₹1,900</p>
+            <p class="text-center">Min 20% off</p>
+        </div>              
+       </div>
+        </div>
+    </main>
+    <div class="contact" id="contact">
+        <form>
+            <h1 style="font-size: 40px;color: ghostwhite;">Contacts</h1>
+            <label for="dob">Email:&nbsp;&nbsp;&nbsp;&nbsp;</label><br> 
+            <input type="email" id="email" value="" placeholder="Enter email address" required><br><br>
+            <label for="number">Mobile Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" id="number" value="" placeholder="Enter your Mobile Number">
+           <br><br>
+           <button class="submit" type="submit">Submit</button>
+        </form>
+
+    </div>
+    <section class="footer" id="contact">
+        <div class="foot">
+            <div class="footer-content">
+                
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#card">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.linkedin.com/in/vinthiya-m-176451255/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                        <a href="https://www.vinthiya.wordpress.com" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                        <a href="https://www.github.com/VinthiyaM" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="end">
+            <p style="color: black;">Copyright © 2024 Shopping All Rights Reserved.<br>Website developed by:Vinthiya Murugaiya</p>
+        </div>
+    </section>
+</body>
+</html>
